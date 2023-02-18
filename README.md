@@ -9,11 +9,11 @@
 ### What the bot can do or not
 - Share DCS/Tacview/LotATC/SRS server info (names, IP, ports, passwords, players online, etc...) directly on your Discord
 - Get the DCS events (connections, slots, takeoffs, shots, team shots, kills, ejections, crashs, landings, messages, server ready)
-- Talk between DCS ingame chat (**[2all]** only) and a Discord channel (also works with LotATC's chat). I had to remove every special characters from Discord to DCS chat to avoid "<BAD UTF>" problem
+- Talk between DCS ingame chat (**[2all]** only) and a Discord channel (also works with LotATC's chat). I had to remove every special characters from Discord to DCS chat to avoid "\<BAD UTF\>" problem
 - The bot is working with one server instance, I don't know for more instances (I guess you would have to duplicate and configure one bot for one instance)
 - Your bot will not be boosted by Discord Nitro, so you will have two limits, the bot can't use emojiIDs from another Discord, and the bot has a limit of 2000 character per message.
 - If there is a bug, report to me on the ED's forum thread, I'll see to correct it.
-- For now, I don't take "feature requests", "ideas", "customization", etc...  everyone will have a different idea of what its bot should do and/or how it should be, so if you need something specific, feel free to make your own modifications (the server is under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence (CC BY-NC-SA 4.0), so you can make modify it)
+- For now, I don't take "feature requests", "ideas", "customization", etc...  everyone will have a different idea of what its bot should do and/or how it should be, so if you need something specific, feel free to make your own modifications (the server is under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0), so you can make modify it)
 
 <p align="center">
   <img src="https://cdn.discordapp.com/attachments/559138601573548052/1071133963541807314/image.png" />
@@ -117,7 +117,7 @@ And you should get something like that
 Saved, reboot and enjoy 🙂
 - if you want to remove an info from the bot (a password for example, or the IP, or player list, ...)
 you just need to comment the line "messageToShow" adding // just before, in the **index.js** file.
-For example, if I want to not share the list of players online, I 
+For example, if I want to not share the list of players online, I add // at the beginning of the messageToShow line.
 ```javascript
 //****************
 //* Players data *
@@ -129,16 +129,29 @@ if (playersData != null && Object.keys(playersData).length > 0) {
 }
 ```
 
+
+### License
+![CC BY-NC-SA](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png)
+CC BY-NC-SA: This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms. 
+
+CC BY-NC-SA includes the following elements:
+BY – Credit must be given to the creator
+NC – Only noncommercial uses of the work are permitted
+SA – Adaptations must be shared under the same terms
+See for [LICENSE.MD](https://github.com/frasta/DCS-Discord-bot/blob/main/LICENSE.md) more details.
+
 ### Any question?
-If any question, find me on my Discord in a public channel (no DM, your question can help other people 😉 ) =>
+If you have any question, find me on my Discord in a public channel (please no DM, your question can help other people 😉) =>
 [![My Discord](https://cdn.discordapp.com/attachments/559138601573548052/999311782382424084/unknown.png)](https://discord.gg/ZUZdMzQ)
 or on the ED's forum :) => [link](https://forum.dcs.world/topic/318803-discord-bot-for-dcs-dbs-digital-bot-simulator-by-asta/)
+
 
 
 ### Do you like my work?
 Then, feel free to buy me a coffee ☕ 
 
 <a href="https://www.buymeacoffee.com/Astazou" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 
 Thank you
 
