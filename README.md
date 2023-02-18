@@ -10,7 +10,7 @@
 - Share DCS/Tacview/LotATC/SRS server info (names, IP, ports, passwords, players online, etc...) directly on your Discord
 - Get the DCS events (connections, slots, takeoffs, shots, team shots, kills, ejections, crashs, landings, messages, server ready)
 - Talk between DCS ingame chat (**[2all]** only) and a Discord channel (also works with LotATC's chat). I had to remove every special characters from Discord to DCS chat to avoid "\<BAD UTF\>" problem
-- The bot is working with one server instance, I don't know for more instances (I guess you would have to duplicate and configure one bot for one instance)
+- The bot is working with one server instance, I don't know for more instances (I guess you would have to duplicate and configure one bot for each instance)
 - Your bot will not be boosted by Discord Nitro, so you will have two limits, the bot can't use emojiIDs from another Discord, and the bot has a limit of 2000 character per message.
 - If there is a bug, report to me on the ED's forum thread, I'll see to correct it.
 - For now, I don't take "feature requests", "ideas", "customization", etc...  everyone will have a different idea of what its bot should do and/or how it should be, so if you need something specific, feel free to make your own modifications (the server is under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0), so you can make modify it)
@@ -25,14 +25,20 @@
 
 
 ### Requirements before installation
-- be admin on the Discord where you will install the bot
-- have access to your DCS server with SRS + Tacview + LotATC
-- be able to edit configuration files (no need to have skill in development, but must feel OK with file editing, **Notpad++** strongly recommended)
+- Be admin on the Discord where you will install the bot
+- Have access to your DCS server with SRS + Tacview + LotATC
+- Be able to edit configuration files (no need to have skill in development, but must feel OK with file editing, **Notepad++** strongly recommended)
+- Be able to enter commands in the Windows prompt (or Powershell)
+- Be aware this bot is very CPU+RAM consuming (joke 🤡), see by yourself:
+
+<p align="center">
+  <img src="https://cdn.discordapp.com/attachments/559138601573548052/1076557805508628490/image.png" />
+</p>
 
 
 ### Installation
 - Shutdown your DCS server
-- Install node.js [link](https://nodejs.org/en/)
+- Install node.js [link](https://nodejs.org/en/) (tested and working well with 18.14.0 and 19.6.0)
 - Create folder where the bot will be installed and go inside using the Windows Command Prompt (CMD)
 - When inside, type 
 `npm init`
@@ -110,9 +116,9 @@ If you modify something here, it will be applied to the server only at the next 
   <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072571238989443204/image.png"/>
 </p>
 
-- if you want to use your custom emojis from your server, you need to get their IDs and put them in the **index.js** ( //TODO put your own Emoji ID ) file and in the **DBSGameGUI.lua** file (mostly in the function getIcon)
+- If you want to use your custom emojis from your server, you need to get their IDs and put them in the **index.js** ( //TODO put your own Emoji ID ) file and in the **DBSGameGUI.lua** file (mostly in the function getIcon)
 To get the emoji ID of something you added to your Discord server:
-- type in Discord:
+- Type in Discord:
 `\:TheNameOfYourEmoji:`
 And you should get something like that
 `<:TheNameOfYourEmoji:aRandomNumber>`
@@ -123,7 +129,7 @@ And you should get something like that
 
 - Then you can copy it and paste it in your **index.js** and/or **DBSGameGUI.lua** files 🙂
 Saved, reboot and enjoy 🙂
-- if you want to remove an info from the bot (a password for example, or the IP, or player list, ...)
+- If you want to remove an info from the bot (a password for example, or the IP, or player list, ...)
 you just need to comment the line "messageToShow" adding // just before, in the **index.js** file.
 For example, if I want to not share the list of players online, I add // at the beginning of the messageToShow line.
 ```javascript
@@ -135,6 +141,18 @@ if (playersData != null && Object.keys(playersData).length > 0) {
 		//messageToShow += "  "+getColorString(player.side)+"*"+player.name+"* "+player.aircraft+"\n"
 	});
 }
+```
+- If you want to run your Discord bot automatically when you are running your server, I suggest you to create a .bat file and call it with the Windows task scheduler, doing something like that:
+```bat
+cd "C:\yourPathToTheBot"
+node index.js
+PAUSE
+```
+Or even that if you prefer to run it with pm2:
+```bat
+cd "C:\yourPathToTheBot"
+pm2 start index.js
+PAUSE
 ```
 
 
@@ -156,7 +174,7 @@ or on the ED's forum :) => [link](https://forum.dcs.world/topic/318803-discord-b
 
 
 
-### Do you like my work?
+### Did you like my work?
 Then, feel free to buy me a coffee ☕ 
 
 <a href="https://www.buymeacoffee.com/Astazou" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
