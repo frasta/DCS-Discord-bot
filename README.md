@@ -41,8 +41,10 @@
 - Download and unzip the .zip file
 - Take the **DBSGameGUI.lua** file and put it in the folder **../SavesGames/yourDCSserver/Scripts/Hooks/**
 - Take the other files and put them where you created your bot's folder 
-- Create your Discord bot [link](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot). 
+- Create your Discord bot [link](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
+
 It must have those permissions : read Messages/View Channels, send messages, Manage messages, read message history, use external Emojis, add reactions
+
 Follow the steps until this part: [link](https://discordjs.guide/creating-your-bot/#using-config-json) putting your ID in the **config.json** (see screen below)
 - You need to activate **PRESENCE INTENT** and **MESSAGE CONTENT INTENT** (see this screen)
 <p align="center">
@@ -69,6 +71,10 @@ Follow the steps until this part: [link](https://discordjs.guide/creating-your-b
 
 - Still in the **index.js** file, you must change some paths regarding where your files are located on your computer 
 - In the **index.js** file, you can see different "TODO" to identify where you need to make modifications
+<p align="center">
+  <img src="https://cdn.discordapp.com/attachments/559138601573548052/1076520654268014682/image.png" />
+</p>
+
 - Run the bot, for that, use the  Windows Command Prompt (CMD) where the **index.js** is, and type
 `node index.js`
 (see screen below) 
