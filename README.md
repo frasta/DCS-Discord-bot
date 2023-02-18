@@ -44,25 +44,29 @@
 - Create your Discord bot [link](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot). 
 It must have those permissions : read Messages/View Channels, send messages, Manage messages, read message history, use external Emojis, add reactions
 Follow the steps until this part: [link](https://discordjs.guide/creating-your-bot/#using-config-json) putting your ID in the **config.json** (see screen below)
-- You need to activate **PRESENCE INTENT** and **MESSAGE CONTENT INTENT** (see this screen) 
+- You need to activate **PRESENCE INTENT** and **MESSAGE CONTENT INTENT** (see this screen)
 <p align="center">
   <img src="https://cdn.discordapp.com/attachments/559138601573548052/1076181402963423272/image.png" />
 </p>
+
 - Create two Discord channels, one for server info' and the second one for all the events (including the chat)
 - Get the developper Discord mod (settings ⚙ => advanced => Developper mod) (see screen below)
 <p align="center">
   <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568029180862505/image.png" />
 </p>
+
 - Right click on the channels and get the IDs to put them in the **index.js** file. (see screens below)
 <p align="center">
   <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568306545983499/image.png" />
   <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568306982211635/image-1.png" />
 </p>
+
 - Same for the bot's ID (see screens below)
 <p align="center">
   <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568409046384681/image.png" />
   <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568306982211635/image-1.png" />
 </p>
+
 - Still in the **index.js** file, you must change some paths regarding where your files are located on your computer 
 - In the **index.js** file, you can see different "TODO" to identify where you need to make modifications
 - Run the bot, for that, use the  Windows Command Prompt (CMD) where the **index.js** is, and type
@@ -71,6 +75,7 @@ Follow the steps until this part: [link](https://discordjs.guide/creating-your-b
 <p align="center">
   <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568638160261130/image.png" />
 </p>
+
 if error because missing dgram library, still with the Windows Command Prompt (CMD) where the index.js is, type
 `npm install dgram`
 same for http if needed
@@ -82,6 +87,7 @@ it will make the bot to answer. Take the ID of this message without deleting it.
   <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072569115681771551/image.png" />
   <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568306982211635/image-1.png" />
 </p>
+
 - Restart the bot (To stop the bot,in the CMD windows, do CTRL+C, and start in again the bot with "node index.js")
 - Start DCS server
 Should works! 🤞 
@@ -95,6 +101,7 @@ If you modify something here, it will be applied to the server only at the next 
 <p align="center">
   <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072571238989443204/image.png"/>
 </p>
+
 - if you want to use your custom emojis from your server, you need to get their IDs and put them in the **index.js** ( //TODO put your own Emoji ID ) file and in the **DBSGameGUI.lua** file (mostly in the function getIcon)
 To get the emoji ID of something you added to your Discord server:
 - type in Discord:
@@ -106,7 +113,7 @@ And you should get something like that
   <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072574057314254978/image.png"/>
 </p>
 
-Then you can copy it and paste it in your **index.js** and/or **DBSGameGUI.lua** files 🙂
+- Then you can copy it and paste it in your **index.js** and/or **DBSGameGUI.lua** files 🙂
 Saved, reboot and enjoy 🙂
 - if you want to remove an info from the bot (a password for example, or the IP, or player list, ...)
 you just need to comment the line "messageToShow" adding // just before, in the **index.js** file.
