@@ -5,10 +5,6 @@
   <img src="https://cdn.discordapp.com/attachments/559138601573548052/1071379042621739069/DBS.png" />
 </p>
 
-<p align="center">
-  <img src="" />
-</p>
-
 
 ### What the bot can do or not
 - Share DCS/Tacview/LotATC/SRS server info (names, IP, ports, passwords, players online, etc...) directly on your Discord
@@ -109,12 +105,14 @@ And you should get something like that
 <p align="center">
   <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072574057314254978/image.png"/>
 </p>
+
 Then you can copy it and paste it in your **index.js** and/or **DBSGameGUI.lua** files 🙂
 Saved, reboot and enjoy 🙂
 - if you want to remove an info from the bot (a password for example, or the IP, or player list, ...)
 you just need to comment the line "messageToShow" adding // just before, in the **index.js** file.
 For example, if I want to not share the list of players online, I 
-`//****************
+```javascript
+//****************
 //* Players data *
 //****************
 if (playersData != null && Object.keys(playersData).length > 0) {
@@ -122,7 +120,7 @@ if (playersData != null && Object.keys(playersData).length > 0) {
 		//messageToShow += "  "+getColorString(player.side)+"*"+player.name+"* "+player.aircraft+"\n"
 	});
 }
-`
+```
 
 ### Any question?
 If any question, find me on my Discord in a public channel (no DM, your question can help other people 😉 ) =>
@@ -132,6 +130,7 @@ or on the ED's forum :) => [link](https://forum.dcs.world/topic/318803-discord-b
 
 ### Do you like my work?
 Then, feel free to buy me a coffee ☕ 
+
 <a href="https://www.buymeacoffee.com/Astazou" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 Thank you
