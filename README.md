@@ -17,6 +17,7 @@
 
 <p align="center">
   <img src="https://cdn.discordapp.com/attachments/559138601573548052/1071133963541807314/image.png" />
+  <img src="https://cdn.discordapp.com/attachments/559138601573548052/1071374466229227650/image.png" />
 </p>
 
 
