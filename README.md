@@ -88,7 +88,9 @@ same for http if needed
 `npm install http`
 - In the info channel, type 
 `!init`
-it will make the bot to answer. Take the ID of this message without deleting it. And paste the ID in the **index.js** file (if you delete this message by accident, remove the ID, save, restart the bot and redo "!init")
+- It will make the bot to answer. 
+`First message!`
+- Take the ID of this message without deleting it. And paste the ID in the **index.js** file (if you delete this message by accident, remove the ID, save, restart the bot and redo "!init")
 <p align="center">
   <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072569115681771551/image.png" />
   <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568306982211635/image-1.png" />
