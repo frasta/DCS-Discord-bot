@@ -109,7 +109,9 @@ client.on("ready", function() {
 	chanelTchat = client.channels.cache.find(channel => channel.id === channelTchatID);
 	
 	sleep(10000).then(() => { // Delay is time to get the answer for the IP
-		updateLiveData();
+		if (messageLiveID != "") {
+			updateLiveData();
+		}
 	})
 });
 
