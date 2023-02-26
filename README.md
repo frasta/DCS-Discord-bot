@@ -2,7 +2,7 @@
 
 ## A DCS World Discord bot by Asta☠
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/559138601573548052/1071379042621739069/DBS.png" />
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/avatar.png?raw=true" />
 </p>
 
 
@@ -16,8 +16,8 @@
 - For now, I don't take "feature requests", "ideas", "customization", etc...  everyone will have a different idea of what its bot should do and/or how it should be, so if you need something specific, feel free to make your own modifications (the server is under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0), so you can make modify it)
 
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/559138601573548052/1071133963541807314/image.png" />
-  <img src="https://cdn.discordapp.com/attachments/559138601573548052/1071374466229227650/image.png" />
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/liveInfo.png?raw=true" />
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/events.png?raw=true" />
 </p>
 
 
@@ -33,7 +33,7 @@
 - Be aware this bot is very CPU+RAM consuming (joke 🤡), see by yourself:
 
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/559138601573548052/1076557805508628490/image.png" />
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/CPURAMusage.png?raw=true" />
 </p>
 
 
@@ -55,38 +55,38 @@ It must have those permissions : read Messages/View Channels, send messages, Man
 Follow the steps until this part: [link](https://discordjs.guide/creating-your-bot/#using-config-json) putting your ID in the **config.json** (see screen below)
 - You need to activate **PRESENCE INTENT** and **MESSAGE CONTENT INTENT** (see this screen)
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/559138601573548052/1076181402963423272/image.png" />
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/intent.png?raw=true" />
 </p>
 
 - Create two Discord channels, one for server info' and the second one for all the events (including the chat)
 - Get the developper Discord mod (settings ⚙ => advanced => Developper mod) (see screen below)
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568029180862505/image.png" />
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/devMod.JPG?raw=true" />
 </p>
 
 - Right click on the channels and get the IDs to put them in the **index.js** file. (see screens below)
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568306545983499/image.png" />
-  <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568306982211635/image-1.png" />
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/getChannelID.JPG?raw=true" />
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/IDinIndexFile.png?raw=true" />
 </p>
 
 - Same for the bot's ID (see screens below)
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568409046384681/image.png" />
-  <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568306982211635/image-1.png" />
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/getBotID.JPG?raw=true" />
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/IDinIndexFile.png?raw=true" />
 </p>
 
 - Still in the **index.js** file, you must change some paths regarding where your files are located on your computer 
 - In the **index.js** file, you can see different "TODO" to identify where you need to make modifications
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/559138601573548052/1076520654268014682/image.png" />
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/todos.png?raw=true" />
 </p>
 
 - Run the bot, for that, use the  Windows Command Prompt (CMD) where the **index.js** is, and type
 `node index.js`
 (see screen below) 
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568638160261130/image.png" />
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/startBot.JPG?raw=true" />
 </p>
 
 if error because missing dgram library, still with the Windows Command Prompt (CMD) where the index.js is, type
@@ -99,8 +99,8 @@ same for http if needed
 `First message!`
 - Take the ID of this message without deleting it. And paste the ID in the **index.js** file (if you delete this message by accident, remove the ID, save, restart the bot and redo "!init")
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072569115681771551/image.png" />
-  <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072568306982211635/image-1.png" />
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/getLiveMessageID.png?raw=true" />
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/IDinIndexFile.png?raw=true" />
 </p>
 
 - Restart the bot (To stop the bot,in the CMD windows, do CTRL+C, and start in again the bot with "node index.js")
@@ -114,7 +114,7 @@ You can of course change the ports if needed (if modified, must be also edited i
 And you can decide what info' you want to send from the DCS server to the Discord bot, choosing true or false at each item.
 If you modify something here, it will be applied to the server only at the next server start. 
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072571238989443204/image.png"/>
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/eventsParams.png?raw=true"/>
 </p>
 
 - If you want to use your custom emojis from your server, you need to get their IDs and put them in the **index.js** ( //TODO put your own Emoji ID ) file and in the **DBSGameGUI.lua** file (mostly in the function getIcon)
@@ -125,7 +125,7 @@ And you should get something like that
 `<:TheNameOfYourEmoji:aRandomNumber>`
 (or see the screen below)
 <p align="center">
-  <img src="https://cdn.discordapp.com/attachments/1072564804809654332/1072574057314254978/image.png"/>
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/EmojiCustom.png?raw=true"/>
 </p>
 
 - Then you can copy it and paste it in your **index.js** and/or **DBSGameGUI.lua** files 🙂
