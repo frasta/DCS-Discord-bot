@@ -102,7 +102,10 @@ same for http if needed
   <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/getLiveMessageID.png?raw=true" />
   <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/IDinIndexFile.png?raw=true" />
 </p>
-
+- Then, you should have 4 IDs (= 2 channelID + 1 messageID + 1 botID) used like this:
+<p align="center">
+  <img src="https://github.com/frasta/DCS-Discord-bot/blob/main/img/IDs.JPG?raw=true" />
+</p>
 - Restart the bot (To stop the bot,in the CMD windows, do CTRL+C, and start in again the bot with "node index.js")
 - Start DCS server
 Should works! 🤞 
