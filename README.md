@@ -45,7 +45,7 @@
 `npm init`
 - Install node plugins 
 `npm install discord.js`
-- Download and unzip the .zip file
+- Download and unzip the [.zip](https://github.com/frasta/DCS-Discord-bot/releases) file
 - Take the **DBSGameGUI.lua** file and put it in the folder **../SavesGames/yourDCSserver/Scripts/Hooks/**
 - Take the other files and put them where you created your bot's folder 
 - Create your Discord bot [link](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
